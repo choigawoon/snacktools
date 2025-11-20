@@ -138,6 +138,28 @@
       "linear": "선형",
       "zoom": "확대/축소",
       "diffHighlight": "차이점 표시"
+    },
+    "json-schema-converter": {
+      "title": "JSON Schema 변환기",
+      "description": "JSON 데이터를 JSON Schema 형식으로 변환",
+      "hint": "JSON 붙여넣기 또는 파일 드롭",
+      "input": "JSON 입력",
+      "output": "JSON Schema 출력",
+      "uploadFile": "업로드",
+      "clear": "지우기",
+      "convert": "Schema로 변환",
+      "copy": "복사",
+      "copied": "복사됨!",
+      "schemaTitle": "Schema 제목",
+      "placeholder": "JSON을 붙여넣거나 .json 파일을 드래그 앤 드롭하세요...\n\n예시:\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"age\": 21\n}",
+      "dropHere": "JSON 파일을 여기에 드롭",
+      "noOutput": "JSON을 변환하면 스키마가 표시됩니다",
+      "invalidJson": "유효하지 않은 JSON 형식입니다",
+      "invalidFile": "유효한 JSON 파일을 업로드하세요",
+      "emptyInput": "JSON 데이터를 입력하세요",
+      "step1": "JSON 붙여넣기 또는 .json 파일 드래그 앤 드롭",
+      "step2": "선택적으로 스키마 제목 설정",
+      "step3": "변환을 클릭하고 결과 복사"
     }
   },
   "pages": {

@@ -138,6 +138,28 @@
       "linear": "リニア",
       "zoom": "ズーム",
       "diffHighlight": "差分表示"
+    },
+    "json-schema-converter": {
+      "title": "JSON Schema変換",
+      "description": "JSONデータをJSON Schema形式に変換",
+      "hint": "JSONを貼り付けまたはファイルをドロップ",
+      "input": "JSON入力",
+      "output": "JSON Schema出力",
+      "uploadFile": "アップロード",
+      "clear": "クリア",
+      "convert": "Schemaに変換",
+      "copy": "コピー",
+      "copied": "コピー完了!",
+      "schemaTitle": "Schemaタイトル",
+      "placeholder": "JSONを貼り付けるか、.jsonファイルをドラッグ＆ドロップ...\n\n例:\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"age\": 21\n}",
+      "dropHere": "JSONファイルをここにドロップ",
+      "noOutput": "JSONを変換するとスキーマが表示されます",
+      "invalidJson": "無効なJSON形式です",
+      "invalidFile": "有効なJSONファイルをアップロードしてください",
+      "emptyInput": "JSONデータを入力してください",
+      "step1": "JSONを貼り付けまたは.jsonファイルをドラッグ＆ドロップ",
+      "step2": "必要に応じてスキーマタイトルを設定",
+      "step3": "変換をクリックして結果をコピー"
     }
   },
   "pages": {
