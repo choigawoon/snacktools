@@ -6,7 +6,8 @@ import {
   Maximize2,
   Brush,
   FileImage,
-  ArrowRight
+  ArrowRight,
+  SplitSquareVertical
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
@@ -59,6 +60,15 @@ const tools = [
     hintKey: 'tools.turn-into-svg.hint' as const,
     icon: FileImage,
     color: 'bg-pink-500',
+  },
+  {
+    id: 'image-comparison-slider',
+    path: '/tools/image-comparison-slider' as const,
+    titleKey: 'tools.image-comparison-slider.title' as const,
+    descKey: 'tools.image-comparison-slider.description' as const,
+    hintKey: 'tools.image-comparison-slider.hint' as const,
+    icon: SplitSquareVertical,
+    color: 'bg-indigo-500',
   },
 ]
 

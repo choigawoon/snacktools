@@ -113,6 +113,20 @@
       "step1": "Upload your image (PNG, JPG)",
       "step2": "Adjust threshold and simplification",
       "step3": "Convert and download SVG"
+    },
+    "image-comparison-slider": {
+      "title": "Image Comparison Slider",
+      "description": "Compare two images side-by-side with an interactive slider",
+      "hint": "Drag slider to compare",
+      "beforeImage": "Before Image",
+      "afterImage": "After Image",
+      "before": "Before",
+      "after": "After",
+      "unifiedSize": "Unified Size",
+      "noComparison": "Upload two images to compare",
+      "step1": "Upload before and after images",
+      "step2": "Drag the slider to compare",
+      "step3": "Download the comparison image"
     }
   },
   "pages": {
