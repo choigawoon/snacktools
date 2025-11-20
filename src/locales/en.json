@@ -126,7 +126,18 @@
       "noComparison": "Upload two images to compare",
       "step1": "Upload before and after images",
       "step2": "Drag the slider to compare",
-      "step3": "Download the comparison image"
+      "step3": "Download the comparison image",
+      "viewControls": "View Controls",
+      "viewMode": "View Mode",
+      "slider": "Slider",
+      "overlay": "Overlay",
+      "diff": "Diff",
+      "opacity": "Opacity",
+      "interpolation": "Interpolation",
+      "point": "Point",
+      "linear": "Linear",
+      "zoom": "Zoom",
+      "diffHighlight": "Differences"
     },
     "json-schema-converter": {
       "title": "JSON Schema Converter",
