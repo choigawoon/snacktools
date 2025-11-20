@@ -113,6 +113,20 @@
       "step1": "画像をアップロード（PNG、JPG）",
       "step2": "しきい値と簡略化を調整",
       "step3": "変換してSVGをダウンロード"
+    },
+    "image-comparison-slider": {
+      "title": "画像比較スライダー",
+      "description": "スライダーで2つの画像を並べて比較",
+      "hint": "スライダーをドラッグして比較",
+      "beforeImage": "ビフォー画像",
+      "afterImage": "アフター画像",
+      "before": "ビフォー",
+      "after": "アフター",
+      "unifiedSize": "統合サイズ",
+      "noComparison": "比較する2つの画像をアップロード",
+      "step1": "ビフォーとアフターの画像をアップロード",
+      "step2": "スライダーをドラッグして比較",
+      "step3": "比較画像をダウンロード"
     }
   },
   "pages": {

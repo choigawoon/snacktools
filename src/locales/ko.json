@@ -113,6 +113,20 @@
       "step1": "이미지 업로드 (PNG, JPG)",
       "step2": "임계값과 단순화 조정",
       "step3": "변환하고 SVG 다운로드"
+    },
+    "image-comparison-slider": {
+      "title": "이미지 비교 슬라이더",
+      "description": "슬라이더를 이용해 두 이미지를 나란히 비교",
+      "hint": "슬라이더를 드래그하여 비교",
+      "beforeImage": "이전 이미지",
+      "afterImage": "이후 이미지",
+      "before": "이전",
+      "after": "이후",
+      "unifiedSize": "통합 크기",
+      "noComparison": "비교할 두 이미지를 업로드하세요",
+      "step1": "이전과 이후 이미지 업로드",
+      "step2": "슬라이더를 드래그하여 비교",
+      "step3": "비교 이미지 다운로드"
     }
   },
   "pages": {
