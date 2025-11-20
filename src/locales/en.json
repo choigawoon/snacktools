@@ -127,6 +127,28 @@
       "step1": "Upload before and after images",
       "step2": "Drag the slider to compare",
       "step3": "Download the comparison image"
+    },
+    "json-schema-converter": {
+      "title": "JSON Schema Converter",
+      "description": "Convert JSON data to JSON Schema format",
+      "hint": "Paste or drop JSON file",
+      "input": "JSON Input",
+      "output": "JSON Schema Output",
+      "uploadFile": "Upload",
+      "clear": "Clear",
+      "convert": "Convert to Schema",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "schemaTitle": "Schema Title",
+      "placeholder": "Paste your JSON here or drag & drop a .json file...\n\nExample:\n{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"age\": 21\n}",
+      "dropHere": "Drop JSON file here",
+      "noOutput": "Convert JSON to see the schema",
+      "invalidJson": "Invalid JSON format",
+      "invalidFile": "Please upload a valid JSON file",
+      "emptyInput": "Please enter JSON data",
+      "step1": "Paste JSON or drag & drop a .json file",
+      "step2": "Optionally set a schema title",
+      "step3": "Click Convert and copy the result"
     }
   },
   "pages": {
