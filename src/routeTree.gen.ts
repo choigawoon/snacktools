@@ -10,12 +10,24 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ZustandTestRouteImport } from './routes/zustand-test'
+import { Route as ToolsRouteImport } from './routes/tools'
 import { Route as MswTestRouteImport } from './routes/msw-test'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ToolsIndexRouteImport } from './routes/tools/index'
+import { Route as ToolsTurnIntoSvgRouteImport } from './routes/tools/turn-into-svg'
+import { Route as ToolsTurnIntoFaviconRouteImport } from './routes/tools/turn-into-favicon'
+import { Route as ToolsResizeImageRouteImport } from './routes/tools/resize-image'
+import { Route as ToolsPbrushRouteImport } from './routes/tools/pbrush'
+import { Route as ToolsCropImageRouteImport } from './routes/tools/crop-image'
 
 const ZustandTestRoute = ZustandTestRouteImport.update({
   id: '/zustand-test',
   path: '/zustand-test',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsRoute = ToolsRouteImport.update({
+  id: '/tools',
+  path: '/tools',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MswTestRoute = MswTestRouteImport.update({
@@ -28,34 +40,115 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsIndexRoute = ToolsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsTurnIntoSvgRoute = ToolsTurnIntoSvgRouteImport.update({
+  id: '/turn-into-svg',
+  path: '/turn-into-svg',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsTurnIntoFaviconRoute = ToolsTurnIntoFaviconRouteImport.update({
+  id: '/turn-into-favicon',
+  path: '/turn-into-favicon',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsResizeImageRoute = ToolsResizeImageRouteImport.update({
+  id: '/resize-image',
+  path: '/resize-image',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsPbrushRoute = ToolsPbrushRouteImport.update({
+  id: '/pbrush',
+  path: '/pbrush',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsCropImageRoute = ToolsCropImageRouteImport.update({
+  id: '/crop-image',
+  path: '/crop-image',
+  getParentRoute: () => ToolsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/msw-test': typeof MswTestRoute
+  '/tools': typeof ToolsRouteWithChildren
   '/zustand-test': typeof ZustandTestRoute
+  '/tools/crop-image': typeof ToolsCropImageRoute
+  '/tools/pbrush': typeof ToolsPbrushRoute
+  '/tools/resize-image': typeof ToolsResizeImageRoute
+  '/tools/turn-into-favicon': typeof ToolsTurnIntoFaviconRoute
+  '/tools/turn-into-svg': typeof ToolsTurnIntoSvgRoute
+  '/tools/': typeof ToolsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/msw-test': typeof MswTestRoute
   '/zustand-test': typeof ZustandTestRoute
+  '/tools/crop-image': typeof ToolsCropImageRoute
+  '/tools/pbrush': typeof ToolsPbrushRoute
+  '/tools/resize-image': typeof ToolsResizeImageRoute
+  '/tools/turn-into-favicon': typeof ToolsTurnIntoFaviconRoute
+  '/tools/turn-into-svg': typeof ToolsTurnIntoSvgRoute
+  '/tools': typeof ToolsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/msw-test': typeof MswTestRoute
+  '/tools': typeof ToolsRouteWithChildren
   '/zustand-test': typeof ZustandTestRoute
+  '/tools/crop-image': typeof ToolsCropImageRoute
+  '/tools/pbrush': typeof ToolsPbrushRoute
+  '/tools/resize-image': typeof ToolsResizeImageRoute
+  '/tools/turn-into-favicon': typeof ToolsTurnIntoFaviconRoute
+  '/tools/turn-into-svg': typeof ToolsTurnIntoSvgRoute
+  '/tools/': typeof ToolsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/msw-test' | '/zustand-test'
+  fullPaths:
+    | '/'
+    | '/msw-test'
+    | '/tools'
+    | '/zustand-test'
+    | '/tools/crop-image'
+    | '/tools/pbrush'
+    | '/tools/resize-image'
+    | '/tools/turn-into-favicon'
+    | '/tools/turn-into-svg'
+    | '/tools/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/msw-test' | '/zustand-test'
-  id: '__root__' | '/' | '/msw-test' | '/zustand-test'
+  to:
+    | '/'
+    | '/msw-test'
+    | '/zustand-test'
+    | '/tools/crop-image'
+    | '/tools/pbrush'
+    | '/tools/resize-image'
+    | '/tools/turn-into-favicon'
+    | '/tools/turn-into-svg'
+    | '/tools'
+  id:
+    | '__root__'
+    | '/'
+    | '/msw-test'
+    | '/tools'
+    | '/zustand-test'
+    | '/tools/crop-image'
+    | '/tools/pbrush'
+    | '/tools/resize-image'
+    | '/tools/turn-into-favicon'
+    | '/tools/turn-into-svg'
+    | '/tools/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   MswTestRoute: typeof MswTestRoute
+  ToolsRoute: typeof ToolsRouteWithChildren
   ZustandTestRoute: typeof ZustandTestRoute
 }
 
@@ -66,6 +159,13 @@ declare module '@tanstack/react-router' {
       path: '/zustand-test'
       fullPath: '/zustand-test'
       preLoaderRoute: typeof ZustandTestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools': {
+      id: '/tools'
+      path: '/tools'
+      fullPath: '/tools'
+      preLoaderRoute: typeof ToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/msw-test': {
@@ -82,12 +182,75 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/': {
+      id: '/tools/'
+      path: '/'
+      fullPath: '/tools/'
+      preLoaderRoute: typeof ToolsIndexRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/turn-into-svg': {
+      id: '/tools/turn-into-svg'
+      path: '/turn-into-svg'
+      fullPath: '/tools/turn-into-svg'
+      preLoaderRoute: typeof ToolsTurnIntoSvgRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/turn-into-favicon': {
+      id: '/tools/turn-into-favicon'
+      path: '/turn-into-favicon'
+      fullPath: '/tools/turn-into-favicon'
+      preLoaderRoute: typeof ToolsTurnIntoFaviconRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/resize-image': {
+      id: '/tools/resize-image'
+      path: '/resize-image'
+      fullPath: '/tools/resize-image'
+      preLoaderRoute: typeof ToolsResizeImageRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/pbrush': {
+      id: '/tools/pbrush'
+      path: '/pbrush'
+      fullPath: '/tools/pbrush'
+      preLoaderRoute: typeof ToolsPbrushRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/crop-image': {
+      id: '/tools/crop-image'
+      path: '/crop-image'
+      fullPath: '/tools/crop-image'
+      preLoaderRoute: typeof ToolsCropImageRouteImport
+      parentRoute: typeof ToolsRoute
+    }
   }
 }
+
+interface ToolsRouteChildren {
+  ToolsCropImageRoute: typeof ToolsCropImageRoute
+  ToolsPbrushRoute: typeof ToolsPbrushRoute
+  ToolsResizeImageRoute: typeof ToolsResizeImageRoute
+  ToolsTurnIntoFaviconRoute: typeof ToolsTurnIntoFaviconRoute
+  ToolsTurnIntoSvgRoute: typeof ToolsTurnIntoSvgRoute
+  ToolsIndexRoute: typeof ToolsIndexRoute
+}
+
+const ToolsRouteChildren: ToolsRouteChildren = {
+  ToolsCropImageRoute: ToolsCropImageRoute,
+  ToolsPbrushRoute: ToolsPbrushRoute,
+  ToolsResizeImageRoute: ToolsResizeImageRoute,
+  ToolsTurnIntoFaviconRoute: ToolsTurnIntoFaviconRoute,
+  ToolsTurnIntoSvgRoute: ToolsTurnIntoSvgRoute,
+  ToolsIndexRoute: ToolsIndexRoute,
+}
+
+const ToolsRouteWithChildren = ToolsRoute._addFileChildren(ToolsRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   MswTestRoute: MswTestRoute,
+  ToolsRoute: ToolsRouteWithChildren,
   ZustandTestRoute: ZustandTestRoute,
 }
 export const routeTree = rootRouteImport
