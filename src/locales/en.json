@@ -160,6 +160,39 @@
       "step1": "Paste JSON or drag & drop a .json file",
       "step2": "Optionally set a schema title",
       "step3": "Click Convert and copy the result"
+    },
+    "image-asset-generator": {
+      "title": "App Asset Generator",
+      "description": "Generate all required image assets for Android, iOS, and Web",
+      "hint": "Icons, favicons, social media images",
+      "selectPlatforms": "Select Platforms",
+      "platformsHint": "Choose target platforms for asset generation",
+      "platforms": {
+        "android": "Android",
+        "ios": "iOS",
+        "web": "Web"
+      },
+      "generate": "Generate Assets",
+      "recommendedSize": "Recommended: 1024x1024 or larger",
+      "noAssets": "No assets generated yet",
+      "noAssetsHint": "Upload an image and click Generate Assets",
+      "assetInfo": "Asset Specifications",
+      "androidInfo": {
+        "icons": "Launcher Icons",
+        "playStore": "Play Store"
+      },
+      "iosInfo": {
+        "icons": "App Icons"
+      },
+      "webInfo": {
+        "favicons": "Favicons",
+        "pwa": "PWA Icons",
+        "social": "Social Media"
+      },
+      "step1": "Upload a high-resolution image (1024x1024 recommended)",
+      "step2": "Select target platforms (Android, iOS, Web)",
+      "step3": "Click Generate Assets to create all sizes",
+      "step4": "Download individually or all at once"
     }
   },
   "pages": {
