@@ -126,7 +126,18 @@
       "noComparison": "비교할 두 이미지를 업로드하세요",
       "step1": "이전과 이후 이미지 업로드",
       "step2": "슬라이더를 드래그하여 비교",
-      "step3": "비교 이미지 다운로드"
+      "step3": "비교 이미지 다운로드",
+      "viewControls": "보기 설정",
+      "viewMode": "보기 모드",
+      "slider": "슬라이더",
+      "overlay": "오버레이",
+      "diff": "차이점",
+      "opacity": "투명도",
+      "interpolation": "보간",
+      "point": "포인트",
+      "linear": "선형",
+      "zoom": "확대/축소",
+      "diffHighlight": "차이점 표시"
     }
   },
   "pages": {

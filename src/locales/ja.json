@@ -126,7 +126,18 @@
       "noComparison": "比較する2つの画像をアップロード",
       "step1": "ビフォーとアフターの画像をアップロード",
       "step2": "スライダーをドラッグして比較",
-      "step3": "比較画像をダウンロード"
+      "step3": "比較画像をダウンロード",
+      "viewControls": "表示設定",
+      "viewMode": "表示モード",
+      "slider": "スライダー",
+      "overlay": "オーバーレイ",
+      "diff": "差分",
+      "opacity": "不透明度",
+      "interpolation": "補間",
+      "point": "ポイント",
+      "linear": "リニア",
+      "zoom": "ズーム",
+      "diffHighlight": "差分表示"
     }
   },
   "pages": {
