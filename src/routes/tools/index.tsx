@@ -7,7 +7,8 @@ import {
   Brush,
   FileImage,
   ArrowRight,
-  SplitSquareVertical
+  SplitSquareVertical,
+  FileJson
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
@@ -69,6 +70,15 @@ const tools = [
     hintKey: 'tools.image-comparison-slider.hint' as const,
     icon: SplitSquareVertical,
     color: 'bg-indigo-500',
+  },
+  {
+    id: 'json-schema-converter',
+    path: '/tools/json-schema-converter' as const,
+    titleKey: 'tools.json-schema-converter.title' as const,
+    descKey: 'tools.json-schema-converter.description' as const,
+    hintKey: 'tools.json-schema-converter.hint' as const,
+    icon: FileJson,
+    color: 'bg-cyan-500',
   },
 ]
 
