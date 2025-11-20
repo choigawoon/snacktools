@@ -8,7 +8,8 @@ import {
   FileImage,
   ArrowRight,
   SplitSquareVertical,
-  FileJson
+  FileJson,
+  Package
 } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
@@ -79,6 +80,15 @@ const tools = [
     hintKey: 'tools.json-schema-converter.hint' as const,
     icon: FileJson,
     color: 'bg-cyan-500',
+  },
+  {
+    id: 'image-asset-generator',
+    path: '/tools/image-asset-generator' as const,
+    titleKey: 'tools.image-asset-generator.title' as const,
+    descKey: 'tools.image-asset-generator.description' as const,
+    hintKey: 'tools.image-asset-generator.hint' as const,
+    icon: Package,
+    color: 'bg-emerald-500',
   },
 ]
 

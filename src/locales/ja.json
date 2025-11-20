@@ -160,6 +160,39 @@
       "step1": "JSONを貼り付けまたは.jsonファイルをドラッグ＆ドロップ",
       "step2": "必要に応じてスキーマタイトルを設定",
       "step3": "変換をクリックして結果をコピー"
+    },
+    "image-asset-generator": {
+      "title": "アプリアセット生成",
+      "description": "Android、iOS、Web用の必要な画像アセットを一括生成",
+      "hint": "アイコン、ファビコン、SNS画像",
+      "selectPlatforms": "プラットフォーム選択",
+      "platformsHint": "アセットを生成するプラットフォームを選択",
+      "platforms": {
+        "android": "Android",
+        "ios": "iOS",
+        "web": "Web"
+      },
+      "generate": "アセット生成",
+      "recommendedSize": "推奨: 1024x1024以上",
+      "noAssets": "生成されたアセットがありません",
+      "noAssetsHint": "画像をアップロードしてアセット生成をクリック",
+      "assetInfo": "アセット仕様",
+      "androidInfo": {
+        "icons": "ランチャーアイコン",
+        "playStore": "Play ストア"
+      },
+      "iosInfo": {
+        "icons": "アプリアイコン"
+      },
+      "webInfo": {
+        "favicons": "ファビコン",
+        "pwa": "PWAアイコン",
+        "social": "SNS"
+      },
+      "step1": "高解像度画像をアップロード（1024x1024推奨）",
+      "step2": "対象プラットフォームを選択（Android、iOS、Web）",
+      "step3": "アセット生成をクリックして全サイズ作成",
+      "step4": "個別またはまとめてダウンロード"
     }
   },
   "pages": {
