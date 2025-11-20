@@ -27,7 +27,93 @@
     "logout": "ログアウト",
     "login": "ログイン",
     "mswTest": "MSWテスト",
-    "zustandTest": "Zustandテスト"
+    "zustandTest": "Zustandテスト",
+    "tools": "ツール"
+  },
+  "tools": {
+    "title": "オンラインツール",
+    "description": "日常使用に最適なシンプルで必須のツール",
+    "common": {
+      "upload": "画像をアップロード",
+      "dropOrClick": "画像をドラッグ＆ドロップまたはクリックして選択",
+      "clickToChange": "クリックして画像を変更",
+      "download": "ダウンロード",
+      "downloadAll": "すべてダウンロード",
+      "preview": "プレビュー",
+      "howToUse": "使い方",
+      "regenerate": "再生成",
+      "original": "オリジナル",
+      "width": "幅",
+      "height": "高さ",
+      "selectArea": "エリアを選択"
+    },
+    "turn-into-favicon": {
+      "title": "ファビコン生成",
+      "description": "画像をさまざまなサイズのファビコンに変換",
+      "hint": "PNG、JPG、SVG対応",
+      "selectSizes": "サイズ選択",
+      "sizesHint": "生成するファビコンのサイズを選択",
+      "generated": "生成されたアイコン",
+      "noImage": "ファビコンを生成するには画像をアップロード",
+      "step1": "画像をアップロード（PNG、JPG、SVG）",
+      "step2": "必要なサイズを選択",
+      "step3": "個別のPNGまたは一括ダウンロード"
+    },
+    "crop-image": {
+      "title": "画像切り取り",
+      "description": "画像を任意のサイズに正確に切り取り",
+      "hint": "ドラッグしてエリアを選択",
+      "cropArea": "切り取りエリア",
+      "crop": "切り取り",
+      "noCrop": "切り取るエリアを選択",
+      "step1": "画像をアップロード",
+      "step2": "クリック＆ドラッグで切り取りエリアを選択",
+      "step3": "切り取りをクリックして結果をダウンロード"
+    },
+    "resize-image": {
+      "title": "画像サイズ変更",
+      "description": "品質を維持しながら画像サイズを変更",
+      "hint": "アスペクト比を維持",
+      "targetSize": "目標サイズ",
+      "resize": "サイズ変更",
+      "noResize": "サイズ変更する画像をアップロード",
+      "aspectLocked": "アスペクト比固定",
+      "aspectFree": "フリーアスペクト比",
+      "scale": "スケール",
+      "presets": "プリセット",
+      "step1": "画像をアップロード",
+      "step2": "目標サイズを設定またはプリセットを使用",
+      "step3": "サイズ変更をクリックしてダウンロード"
+    },
+    "pbrush": {
+      "title": "ペイントブラシ",
+      "description": "クイックスケッチと注釈用のシンプルな描画ツール",
+      "hint": "マウスまたはタッチで描画",
+      "tools": "ツール",
+      "brush": "ブラシ",
+      "eraser": "消しゴム",
+      "color": "色",
+      "custom": "カスタムカラー",
+      "size": "ブラシサイズ",
+      "actions": "アクション",
+      "undo": "元に戻す",
+      "clear": "キャンバスをクリア",
+      "canvas": "キャンバス"
+    },
+    "turn-into-svg": {
+      "title": "画像をSVGに",
+      "description": "ラスター画像をSVGベクター形式に変換",
+      "hint": "シンプルな画像に最適",
+      "settings": "変換設定",
+      "settingsHint": "より良い結果のためにパラメータを調整",
+      "threshold": "しきい値",
+      "simplify": "出力を簡略化",
+      "convert": "SVGに変換",
+      "noSvg": "変換する画像をアップロード",
+      "step1": "画像をアップロード（PNG、JPG）",
+      "step2": "しきい値と簡略化を調整",
+      "step3": "変換してSVGをダウンロード"
+    }
   },
   "pages": {
     "home": {

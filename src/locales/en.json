@@ -27,7 +27,93 @@
     "logout": "Logout",
     "login": "Login",
     "mswTest": "MSW Test",
-    "zustandTest": "Zustand Test"
+    "zustandTest": "Zustand Test",
+    "tools": "Tools"
+  },
+  "tools": {
+    "title": "Online Tools",
+    "description": "Simple and essential tools for everyday use",
+    "common": {
+      "upload": "Upload Image",
+      "dropOrClick": "Drag & drop an image or click to select",
+      "clickToChange": "Click to change image",
+      "download": "Download",
+      "downloadAll": "Download All",
+      "preview": "Preview",
+      "howToUse": "How to Use",
+      "regenerate": "Regenerate",
+      "original": "Original",
+      "width": "Width",
+      "height": "Height",
+      "selectArea": "Select Area"
+    },
+    "turn-into-favicon": {
+      "title": "Favicon Generator",
+      "description": "Convert any image into favicon icons of various sizes",
+      "hint": "Supports PNG, JPG, SVG",
+      "selectSizes": "Select Sizes",
+      "sizesHint": "Choose favicon sizes to generate",
+      "generated": "Generated Icons",
+      "noImage": "Upload an image to generate favicons",
+      "step1": "Upload your image (PNG, JPG, or SVG)",
+      "step2": "Select the sizes you need",
+      "step3": "Download individual PNGs or all at once"
+    },
+    "crop-image": {
+      "title": "Image Cropper",
+      "description": "Crop your images to any size with precision",
+      "hint": "Drag to select area",
+      "cropArea": "Crop Area",
+      "crop": "Crop",
+      "noCrop": "Select an area to crop",
+      "step1": "Upload your image",
+      "step2": "Click and drag to select crop area",
+      "step3": "Click Crop and download the result"
+    },
+    "resize-image": {
+      "title": "Image Resizer",
+      "description": "Resize images to any dimension while maintaining quality",
+      "hint": "Maintains aspect ratio",
+      "targetSize": "Target Size",
+      "resize": "Resize",
+      "noResize": "Upload an image to resize",
+      "aspectLocked": "Aspect Ratio Locked",
+      "aspectFree": "Free Aspect Ratio",
+      "scale": "Scale",
+      "presets": "Presets",
+      "step1": "Upload your image",
+      "step2": "Set target dimensions or use presets",
+      "step3": "Click Resize and download"
+    },
+    "pbrush": {
+      "title": "Paint Brush",
+      "description": "Simple drawing tool for quick sketches and annotations",
+      "hint": "Draw with mouse or touch",
+      "tools": "Tools",
+      "brush": "Brush",
+      "eraser": "Eraser",
+      "color": "Color",
+      "custom": "Custom Color",
+      "size": "Brush Size",
+      "actions": "Actions",
+      "undo": "Undo",
+      "clear": "Clear Canvas",
+      "canvas": "Canvas"
+    },
+    "turn-into-svg": {
+      "title": "Image to SVG",
+      "description": "Convert raster images to SVG vector format",
+      "hint": "Best for simple images",
+      "settings": "Conversion Settings",
+      "settingsHint": "Adjust parameters for better results",
+      "threshold": "Threshold",
+      "simplify": "Simplify Output",
+      "convert": "Convert to SVG",
+      "noSvg": "Upload an image to convert",
+      "step1": "Upload your image (PNG, JPG)",
+      "step2": "Adjust threshold and simplification",
+      "step3": "Convert and download SVG"
+    }
   },
   "pages": {
     "home": {

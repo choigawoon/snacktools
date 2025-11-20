@@ -27,7 +27,93 @@
     "logout": "로그아웃",
     "login": "로그인",
     "mswTest": "MSW 테스트",
-    "zustandTest": "Zustand 테스트"
+    "zustandTest": "Zustand 테스트",
+    "tools": "도구"
+  },
+  "tools": {
+    "title": "온라인 도구",
+    "description": "일상적으로 사용하는 간단하고 필수적인 도구들",
+    "common": {
+      "upload": "이미지 업로드",
+      "dropOrClick": "이미지를 드래그하거나 클릭하여 선택",
+      "clickToChange": "클릭하여 이미지 변경",
+      "download": "다운로드",
+      "downloadAll": "모두 다운로드",
+      "preview": "미리보기",
+      "howToUse": "사용 방법",
+      "regenerate": "재생성",
+      "original": "원본",
+      "width": "너비",
+      "height": "높이",
+      "selectArea": "영역 선택"
+    },
+    "turn-into-favicon": {
+      "title": "파비콘 생성기",
+      "description": "이미지를 다양한 크기의 파비콘으로 변환",
+      "hint": "PNG, JPG, SVG 지원",
+      "selectSizes": "크기 선택",
+      "sizesHint": "생성할 파비콘 크기를 선택하세요",
+      "generated": "생성된 아이콘",
+      "noImage": "파비콘을 생성하려면 이미지를 업로드하세요",
+      "step1": "이미지 업로드 (PNG, JPG 또는 SVG)",
+      "step2": "필요한 크기 선택",
+      "step3": "개별 PNG 또는 전체 다운로드"
+    },
+    "crop-image": {
+      "title": "이미지 자르기",
+      "description": "이미지를 원하는 크기로 정밀하게 자르기",
+      "hint": "드래그하여 영역 선택",
+      "cropArea": "자르기 영역",
+      "crop": "자르기",
+      "noCrop": "자를 영역을 선택하세요",
+      "step1": "이미지 업로드",
+      "step2": "클릭하고 드래그하여 자르기 영역 선택",
+      "step3": "자르기를 클릭하고 결과 다운로드"
+    },
+    "resize-image": {
+      "title": "이미지 크기 조절",
+      "description": "품질을 유지하면서 이미지 크기를 조절",
+      "hint": "종횡비 유지",
+      "targetSize": "목표 크기",
+      "resize": "크기 조절",
+      "noResize": "크기를 조절할 이미지를 업로드하세요",
+      "aspectLocked": "종횡비 고정",
+      "aspectFree": "자유 종횡비",
+      "scale": "비율",
+      "presets": "프리셋",
+      "step1": "이미지 업로드",
+      "step2": "목표 크기 설정 또는 프리셋 사용",
+      "step3": "크기 조절을 클릭하고 다운로드"
+    },
+    "pbrush": {
+      "title": "페인트 브러시",
+      "description": "빠른 스케치와 주석을 위한 간단한 그리기 도구",
+      "hint": "마우스 또는 터치로 그리기",
+      "tools": "도구",
+      "brush": "브러시",
+      "eraser": "지우개",
+      "color": "색상",
+      "custom": "사용자 정의 색상",
+      "size": "브러시 크기",
+      "actions": "작업",
+      "undo": "실행 취소",
+      "clear": "캔버스 지우기",
+      "canvas": "캔버스"
+    },
+    "turn-into-svg": {
+      "title": "이미지를 SVG로",
+      "description": "래스터 이미지를 SVG 벡터 형식으로 변환",
+      "hint": "단순한 이미지에 적합",
+      "settings": "변환 설정",
+      "settingsHint": "더 나은 결과를 위해 매개변수 조정",
+      "threshold": "임계값",
+      "simplify": "출력 단순화",
+      "convert": "SVG로 변환",
+      "noSvg": "변환할 이미지를 업로드하세요",
+      "step1": "이미지 업로드 (PNG, JPG)",
+      "step2": "임계값과 단순화 조정",
+      "step3": "변환하고 SVG 다운로드"
+    }
   },
   "pages": {
     "home": {
